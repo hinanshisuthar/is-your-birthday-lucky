@@ -1,0 +1,27 @@
+html{
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+.first{
+    height: 200px;
+    width: 500px;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid black;
+    margin-top: 190px;
+    font-size: large;
+}
+
+.second-outer{
+    height: 622px;
+    width: 500px;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid black;
+    margin-top: 235px;
+}
