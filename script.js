@@ -24,12 +24,16 @@ function scrollWin() { //for scroll to a certain pixel
 function checkBirthdayIsLucky(){ 
     var dateString = inputDate.value.replaceAll("-",""); //convert date into a string
     var result = getSum(dateString); //sum is returned
+    if(inputNumber.value > 0){
     if(result % inputNumber.value == 0){ // %to check divisibility
         document.getElementById("display-message").innerHTML = "CONGRATS! Your birthday is lucky🎉"; 
     }
     else{
     displayMessage.innerHTML = "SORRY! your birthday is not lucky😞";
     }
+} else {
+    displayMessage.innerHTML = "Please enter a valid number!";
+}
 }
 
 function getSum(dateString)
